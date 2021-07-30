@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(file_image/main.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 20px;
+}
+#div_1 {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 65%;
+	height: 198vh;
+	float: left;
+	padding-left: 3%;
+	padding-top: 2vh;
+}
+.alt {
+	width: 100%;
+	height: 10vh;
+	color: pink;
+	font-size: 40px;
+	padding-bottom: 3vh;
+	padding-top: 2vh;
+}
+.alt p {
+	font-size: 20px;
+}
+.alt p a{
+	color:pink;
+}
+.main {
+	width: 100%;
+	height: 53vh;
+}
+.video {
+	width: 80%;
+	height: 50vh;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 7px 7px;
+}
+#div_2 {
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 32%;
+	height: 200vh;
+	float: right;
+}
+
+a:link, hover{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+}
+button {
+  border: none;
+  padding: 10px 12.5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.5rem;
+  margin: 4px 2px;
+  background-color:pink;
+  border-radius: 7px 7px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+input{
+	display: inline-block;
+	padding-left: 10px;
+	width: 90%;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 10px 10px;
+	outline: none;
+}

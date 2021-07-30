@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phần I</title>
+	<link rel="stylesheet" type="text/css" href="phan_I.css" />
+</head>
+<body>
+	<div id="div_1">
+		<div class="alt">
+			<p>&#9669; <a href="gotoubun_web.html">Trang Chủ</a></p>
+			<p>&#9669; <a href="gotoubun_web.html">Go-toubun</a></p>
+			<h4>Go-toubun no Hayaome( Phần I )</h4>
+		</div>
+		<div class="main">
+			<iframe class="video" src="file_video/review.mp4" name="frame"></iframe>
+		</div>
+		<div style="padding-bottom: 5vh; padding-top: 1.5vh; font-size: 25px; color:yellow;">
+			<p>
+				&#9776;  <span id="sp">Go-toubun no Hayaome Review</span><br>
+				&#9776;  Thời Lượng : 24 phút/tập.
+			</p>
+		</div>
+		<div>
+			<div>
+				<p style="color: rgba(255, 255, 255, 0.7);">Server Vip (Vietsub)</p>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b1">1</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b2">2</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b3">3</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b4">4</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b5">5</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b6">6</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b7">7</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b8">8</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b9">9</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b10">10</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b11">11</button></a>
+				<a href="file_video/review.mp4" target="frame"><button onclick="My_button(id)" id="b12">12</button></a>
+			</div>
+		</div>
+		<div>
+			<marquee direction="right" style="color:yellow; padding-top: 0.5vh;">Liên hệ: &#9993; vungocminh&#64;gmail.com hoặc 
+			&#9742; 0328554419</marquee>
+		</div>
+	</div>
+	<div id = "div_2">
+		<p style="font-size: 1rem; color: pink; padding-top: 10vh; padding-left: 3%;">
+				VNM-ANIME chúc các bạn xem phim vui vẻ!
+		</p>
+		<input type="text" placeholder="Thêm bình luận ..." id="input">
+		<button style="float: right; margin-right: 20px; width: 20%;" onclick="Comment()">Đăng</button>
+	</div>
+	<script type="text/javascript">
+		function My_button(x) {
+			var change = document.getElementById(x);
+			change.style.backgroundColor = "yellow";
+			change.style.color = "black";
+			var inner = document.getElementById("sp");
+			if (x == "b1"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 1";
+			}
+			if (x == "b2"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 2";
+			}
+			if (x == "b3"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 3";
+			}
+			if (x == "b4"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 4";
+			}
+			if (x == "b5"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 5";
+			}
+			if (x == "b6"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 6";
+			}
+			if (x == "b7"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 7";
+			}
+			if (x == "b8"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 8";
+			}
+			if (x == "b9"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 9";
+			}
+			if (x == "b10"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 10";
+			}
+			if (x == "b11"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 11";
+			}
+			if (x == "b12"){
+				inner.innerHTML = "Go-toubun no Hayaome Tập 12";
+			}
+		}
+		function Comment(y){
+			var div_2 = document.getElementById("div_2");
+			var p = document.createElement("p");
+			var input = document.getElementById("input");
+			var x = input.value;
+			y += 1;
+			if (x != ""){
+				p.innerHTML = "viewer: " + x;
+			    p.style.color = "white";
+			    p.style.margin = "50px 50px";
+			    div_2.appendChild(p);
+			}
+			input.value = "";
+		}
+	</script>
+</body>
+</html>
