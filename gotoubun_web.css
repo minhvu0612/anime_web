@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+	font-size: 20px;
+	font-style: inherit;
+	font-family: Florence, cursive;
+}
+
+body {
+	background-image: url(file_image/main.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+	background-attachment: fixed;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.6);
+	display: flex;
+}
+
+
+#div {
+	background-color: rgba(0, 0, 0, 0.7);
+	background-attachment: fixed;
+	background-size: contain;
+	margin: 0;
+	width: 100%;
+	height: 200vh;
+
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes pulse {
+	/*
+	0%, 20%{
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	20%, 40%{
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+	40%, 60%{
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	60%, 80%{
+		background-color: rgba(0, 0, 0, 0.55);
+	}
+	80%, 90%{
+		background-color: rgba(0, 0, 0, 0.6);
+	}*/
+}
+
+#name {
+	animation: 
+	    pulse 1s ease infinite alternate;
+}
+
+@keyframes pulse {
+	0%, 10%{
+		color:red;
+	}
+	11%, 20%{
+		color:green;
+	}
+	21%, 30%{
+		color:yellow;
+	}
+	31%, 40%{
+		color:violet;
+	}
+	41%, 50%{
+		color:orange;
+	}
+	51%, 60%{
+		color:blue;
+	}
+	61%, 70%{
+		color:orange;
+	}
+	71%, 80%{
+		color:pink;
+	}
+	81%, 90%{
+		color:gray;
+	}
+	91%, 100%{
+		color:brown;
+	}
+}
+
+
+#div_1 {
+	width: 60%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 5vh;
+}
+.logo{
+	width: 95%;
+	height: 13vh;
+}
+.logo img {
+	width: 14%;
+	float: left;
+	height: 5vh;
+}
+.logo p {
+	width: 65%;
+	float: right;
+	font-size: 0.7rem;
+}
+.alt {
+	font-style: bold;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.5rem;
+	color: yellow;
+}
+.img_1 {
+	width: 28%;
+	height: 40vh;
+	padding-top: 3vh;
+	float: right;
+	transform: rotateY(0deg);
+	transition: 1500ms;
+}
+.img_1:hover{
+	transform: rotateY(180deg);
+}
+.note {
+	width: 70%;
+	float: left;
+	padding-top: 3vh;
+	font-size: 0.7rem;
+	padding-bottom: 3vh;
+}
+div hr {
+	width: 70%;
+	color: rgba(255, 255, 255, 0.5);
+	border: 0.4px solid;
+}
+
+
+
+#div_2 {
+	width: 20%;
+	float: right;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 7vh;
+	color: pink;
+}
+
+h4 {
+	font-family: ;
+	font-size: 30px;
+	padding-top: 4vh;
+	font-family: "Courier New", Courier, monospace;
+}
+
+a {
+	color: pink;
+	font-size: 0.8rem;
+	font-family: Florence, cursive;
+	padding-left: 3%;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+a:link, a:visited {
+  color: pink;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px 10px;
+}
+
+a:hover, a:active {
+  color: white;
+}
+
+@keyframes nudge {
+	0%, 100% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(30%,0);
+	}
+}
+
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+.fadeIn {
+	-webkit-animation: fadeIn 7s ease-out;
+	animation: fadeIn 7s ease-out;
+}
+
+button {
+  border: none;
+  padding: 10px 12.5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.5rem;
+  margin: 4px 2px;
+  background-color:pink;
+  border-radius: 7px 7px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: yellow;
+}
+
+p a {
+	font-size: 0.8rem;
+}
+
+
+.fa {
+  margin-top: 20px; 
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
